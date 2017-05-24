@@ -6,6 +6,7 @@ package dsaa.c3;
  */
 public class MyArrayUtils {
     public static int INIT_CAPACITY = 6;
+    private static final float FACTOR = 0.75f;
 
     static Object[] ensureSize(Object[] array, int dataSize) {
         int size = array.length;
@@ -14,7 +15,7 @@ public class MyArrayUtils {
                     Math.max(INIT_CAPACITY, dataSize * 2));
         } else if (dataSize == size / 2) {
             array = enSmallArray(array, dataSize,
-                    Math.max(INIT_CAPACITY, (int)(size * 0.75f)));
+                    Math.max(INIT_CAPACITY, (int)(size * FACTOR)));
         }
 
         return array;
