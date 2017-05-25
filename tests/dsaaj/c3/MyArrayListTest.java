@@ -38,7 +38,9 @@ class MyArrayListTest {
         MyIterator<String> iterator = a.iterator();
         while (iterator.hasNext()) {
             String s = iterator.next();
-            if (s.equals("m")) {
+            if (s.equals("c")) {
+                iterator.remove();
+            } else if (s.equals("t")) {
                 iterator.remove();
             } else {
                 System.out.print(s);
