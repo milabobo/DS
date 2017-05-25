@@ -453,12 +453,11 @@ public class MyLinkedList<T> implements MyList<T>, MyDeque<T>, MyStack<T> {
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder("{");
-        int i = 0;
         Node<T> start = first;
         while (start != null) {
-            builder.append(start.item).append(",").append(" ");
-            if (start.next == null) {
-                builder.delete(builder.length() - 2, builder.length());
+            builder.append(start.item);
+            if (start.next != null) {
+                builder.append(",").append(" ");
             }
             start = start.next;
         }
