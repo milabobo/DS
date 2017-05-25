@@ -9,7 +9,7 @@ import java.util.NoSuchElementException;
  */
 public class MyLinkedList<T> implements MyList<T>, MyDeque<T>, MyStack<T> {
 
-    private static class Node<T> {
+    static class Node<T> {
         Node<T> pre;
         T item;
         Node<T> next;
@@ -452,6 +452,21 @@ public class MyLinkedList<T> implements MyList<T>, MyDeque<T>, MyStack<T> {
         last = newNode;
         ++size;
         return true;
+    }
+
+    // Help class for exercise using
+    Node<T> node(int i) {
+        checkRange(i);
+        int k = 0;
+        Node<T> start = first;
+        while (start != null) {
+            if (i == k) {
+                return start;
+            }
+            start = start.next;
+            ++k;
+        }
+        return null;
     }
 
     @Override
