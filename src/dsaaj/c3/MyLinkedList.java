@@ -85,14 +85,15 @@ public class MyLinkedList<T> implements MyList<T>, MyDeque<T>, MyStack<T> {
 
     @Override
     public T remove(T t) {
-        if (first == null || t == null) {
+        if (first == null) {
             return null;
         }
 
         Node<T> next = first;
         Node<T> oldT = null;
         while (next != null) {
-            if (t.equals(next.item)) {
+            if ((t == null && next.item == null)
+                    || (t != null && t.equals(next.item))) {
                 oldT = next;
                 break;
             }
@@ -136,13 +137,14 @@ public class MyLinkedList<T> implements MyList<T>, MyDeque<T>, MyStack<T> {
 
     @Override
     public boolean contains(T t) {
-        if (first == null || t == null) {
+        if (first == null) {
             return false;
         }
 
         Node<T> next = first;
         while (next != null) {
-            if (t.equals(next.item)) {
+            if ((t == null && next.item == null) ||
+                    (t != null && t.equals(next.item))) {
                 return true;
             }
             next = next.next;
@@ -205,6 +207,7 @@ public class MyLinkedList<T> implements MyList<T>, MyDeque<T>, MyStack<T> {
         int innerSize = size;
         int handle = 0;
         Node<T> start = first;
+        Node<T> pre;
 
         @Override
         public boolean hasNext() {
@@ -216,6 +219,7 @@ public class MyLinkedList<T> implements MyList<T>, MyDeque<T>, MyStack<T> {
             checkRange();
             checkModify();
             T t = start.item;
+            pre = start;
             start = start.next;
 
             position++;
@@ -229,7 +233,7 @@ public class MyLinkedList<T> implements MyList<T>, MyDeque<T>, MyStack<T> {
         public void remove() {
             checkHandle();
             checkModify();
-            unlinkNode(start.pre);
+            unlinkNode(pre);
 
             position--;
             innerSize--;
