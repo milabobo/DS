@@ -2,7 +2,7 @@ package dsaaj.c2;
 
 /**
  * Created by yu.tian on 下午7:31.
- * Email mailto:tianyu1@le.com.
+ * Email mailto:milabobo@126.com.
  */
 public class MaxSequence {
     static int sumAl1(int[] a) {

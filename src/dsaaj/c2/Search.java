@@ -2,7 +2,7 @@ package dsaaj.c2;
 
 /**
  * Created by yu.tian on 下午8:25.
- * Email mailto:tianyu1@le.com.
+ * Email mailto:milabobo@126.com.
  */
 public class Search {
     static int binarySearch(int a[], int v) {

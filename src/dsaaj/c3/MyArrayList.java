@@ -5,7 +5,7 @@ import java.util.NoSuchElementException;
 
 /**
  * Created by yu.tian on 下午5:13.
- * Email mailto:tianyu1@le.com.
+ * Email mailto:milabobo@126.com.
  */
 public class MyArrayList<T> implements MyList<T> {
     private int size;

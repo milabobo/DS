@@ -2,7 +2,7 @@ package dsaaj.c3;
 
 /**
  * Created by yu.tian on 下午6:05.
- * Email mailto:tianyu1@le.com.
+ * Email mailto:milabobo@126.com.
  */
 public class MyLinkedListDeque<T> implements MyDeque<T> {
     private MyLinkedList<T> list = new MyLinkedList<T>();

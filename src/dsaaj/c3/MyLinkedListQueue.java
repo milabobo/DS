@@ -2,7 +2,7 @@ package dsaaj.c3;
 
 /**
  * Created by yu.tian on 下午6:12.
- * Email mailto:tianyu1@le.com.
+ * Email mailto:milabobo@126.com.
  */
 public class MyLinkedListQueue<T> implements MyQueue<T> {
     private MyLinkedList<T> list = new MyLinkedList<T>();

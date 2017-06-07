@@ -2,7 +2,7 @@ package dsaaj.c3;
 
 /**
  * Created by yu.tian on 下午10:37.
- * Email mailto:tianyu1@le.com.
+ * Email mailto:milabobo@126.com.
  */
 public interface MyDeque<T> extends MyQueue<T> {
     // throw exception if space full

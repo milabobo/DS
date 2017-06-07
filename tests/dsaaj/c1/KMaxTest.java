@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Created by yu.tian on 下午1:53.
- * Email mailto:tianyu1@le.com.
+ * Email mailto:milabobo@126.com.
  */
 class KMaxTest {
     @Test

@@ -5,7 +5,7 @@ import java.util.NoSuchElementException;
 
 /**
  * Created by yu.tian on 下午10:34.
- * Email mailto:tianyu1@le.com.
+ * Email mailto:milabobo@126.com.
  */
 public class MyLinkedList<T> implements MyList<T>, MyDeque<T>, MyStack<T> {
 

@@ -2,7 +2,7 @@ package dsaaj.c1;
 
 /**
  * Created by yu.tian on 下午1:46.
- * Email mailto:tianyu1@le.com.
+ * Email mailto:milabobo@126.com.
  *
  * Find k's max value in an array
  */

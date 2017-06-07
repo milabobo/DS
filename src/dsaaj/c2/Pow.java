@@ -2,7 +2,7 @@ package dsaaj.c2;
 
 /**
  * Created by yu.tian on 下午12:03.
- * Email mailto:tianyu1@le.com.
+ * Email mailto:milabobo@126.com.
  */
 public class Pow {
     static int pow(int a, int k) {

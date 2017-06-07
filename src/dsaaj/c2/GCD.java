@@ -2,7 +2,7 @@ package dsaaj.c2;
 
 /**
  * Created by yu.tian on 上午11:51.
- * Email mailto:tianyu1@le.com.
+ * Email mailto:milabobo@126.com.
  */
 public class GCD {
     static int gcd(int a, int b) {
