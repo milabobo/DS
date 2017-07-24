@@ -61,4 +61,12 @@ public class SortTest {
         sortStrategy.sort(new CountSort());
         assertArrayEquals(array, SORTED);
     }
+
+    @Test
+    void testHeapSort() {
+        int[] array = Arrays.copyOf(TEST, TEST.length);
+        SortStrategy sortStrategy = new SortStrategy(array);
+        sortStrategy.sort(new HeapSort());
+        assertArrayEquals(array, SORTED);
+    }
 }
