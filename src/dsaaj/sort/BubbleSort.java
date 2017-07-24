@@ -8,6 +8,10 @@ public class BubbleSort implements ISortMethod {
 
     @Override
     public void sort(int[] array) {
+        if (array == null || array.length == 0) {
+            return;
+        }
+
         int length = array.length;
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < length - i - 1; j++) {
